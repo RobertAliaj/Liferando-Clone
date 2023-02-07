@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferboss</title>
+    <link rel="icon" type="image/gif" href="img/eating.png">
+
+
+    <script src="script.js"></script>
+    <script src="templates.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body id="body" onload="init()">
+
+    <nav class="nav-bar">
+        <div class="just-for-cursor">
+            <img src="img/iconizer-eating.svg" class="restaurant">
+            <span>Lieferboss</span>
+        </div>
+        <div class="nav-right">
+            <span>Speisekarte</span>
+            <img src="img/menu-4-32.ico" class="menu-img">
+        </div>
+    </nav>
+
+    <div class="main-section">
+        <div class="left">
+            <img src="img/burger-1502451_1920.jpg" class="pizza">
+            <div class="just-for-padding">
+                <div class="title">
+                    <h2>Ciao Burgahh Restaurant</h2>
+                    <div class="i-and-heart">
+                        <div class="i-and-heart-child">
+                            <img src="img/runde-info-taste.png">
+                        </div>
+                        <div class="i-and-heart-child">
+                            <img src="img/heart.ico">
+                        </div>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="star-div">
+                        <div><img src="img/star-8-16.ico"></div>
+                        <div><img src="img/star-8-16.ico"></div>
+                        <div><img src="img/star-8-16.ico"></div>
+                        <div><img src="img/star-8-16.ico"></div>
+                        <div><img src="img/star-8-16.ico"></div>
+                        <a href="#">
+                            <span>28 Bewertungen</span>
+                        </a>
+                    </div>
+
+                    <div class="page-logo">
+                        <img src="img/LogoMakr-9SVcSr.png">
+                    </div>
+
+
+                </div>
+
+                <div class="delivery-details">
+                    <div class="delivery-child">
+                        <img src="img/time-8-24.ico">
+                        <span>30-35 min</span>
+                    </div>
+                    •
+                    <div class="delivery-child">
+                        <img src="img/bicycle-24.ico">
+                        <span>4,50 €</span>
+                    </div>
+                    •
+                    <div class="delivery-child">
+                        <img src="img/shopping-bag-24.ico">
+                        <span>Min. 20,00€</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dishes">
+                <div class="lens-div">
+                    <img src="img/search-13-32.ico" class="lens">
+                </div>
+                <a href="#">Pizza</a>
+                <a href="#">Burger</a>
+                <a href="#">Suppen</a>
+                <a href="#">Eintöpfe</a>
+                <a href="#">Fingerfood</a>
+                <a href="#">Salate</a>
+                <a href="#">Italienisch</a>
+                <a href="#">Thai</a>
+                <a href="#">Deutsch</a>
+            </div>
+
+            <div class="burger-div">
+                <img src="img/burger-4641173_1920.jpg" class="burger">
+            </div>
+            <div id="dishesDiv" class="dishes-div"></div>
+
+        </div>
+
+        <div id="emptyBasket" class="empty-basket">
+            <h2>Warenkorb</h2>
+            <img src="img/shopping-bag-64.ico">
+            <h3>Fülle deinen Warenkorb</h3>
+            <span>Wähle leckere Gerichte aus der Karte und bestelle dein Menü.</span>
+        </div>
+        <div id="fullBasket" class="full-basket d-none"></div>
+
+        <div id="responsiveBasket" class="basket-responsive" onclick="openPopUpBasket()"></div>
+
+        <div id="xDiv" class="x-div d-none">
+            <img src="img/x-mark-32 (1).ico" class="x-mark d-none" onclick="closePopUpBasket()" id="xMark">
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="logos">
+            <a href="index.html" class="footer-logos">
+                <img src="img/eating.png" class="logo-footer">
+                <span>Lierfeboss</span>
+            </a>
+
+            <div>
+                <div class="social-media-logos">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="img/instagram-64.png">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="img/facebook-3-64 (1).png">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="img/youtube-3-64.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="footer-row">
+            <span> © 2022 Lieferboss von Robert Aliaj</span>
+            <div class="footer-links">
+                <a href="#">Kontakt</a> |
+                <a href="#">Datenschutz</a> |
+                <a href="credits.html">Credits</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
